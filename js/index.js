@@ -13,11 +13,11 @@ class CountdownTimer {
     this.targetDate = targetDate;
   }
   setTimer() {
-    this.timerId = setInterval(() => {
+    setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = this.targetDate - currentTime;
       updateClockface(deltaTime);
-    }, 1000);
+    }, 0);
   }
 }
 
